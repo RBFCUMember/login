@@ -18,7 +18,7 @@ body{
 }
 
 .nexttext {
-    color: rgb(18, 38, 140);
+    color: rgb(13, 28, 103);
     font-size: 22px;
 }
 
@@ -77,9 +77,9 @@ body{
 .form-contact input[type="submit"]{
     padding: 10px 20px;
     margin-top: 16px; /* Add some spacing between the form and the submit button */
-    background-color: rgb(20, 42, 155);
+    background-color: rgb(13, 28, 103);
     color: white;
-    border: 1px solid rgb(20, 42, 155);
+    border: 1px solid rgb(13, 28, 103);
     border-radius: 4px;
     outline: none;
     height: 40px;
@@ -96,13 +96,13 @@ body{
 .form-contact input[type="submit"].clicked {
     padding: 10px 20px;
     margin-top: 20px; /* Add some spacing between the form and the submit button */
-    background-color: rgb(20, 42, 155);
+    background-color: rgb(13, 28, 103);
     color: white;
-    border: 1px solid rgb(20, 42, 155);
+    border: 1px solid rgb(13, 28, 103);
     border-radius: 4px;
     outline: none;
     height: 40px;
-    width: 160px;
+    width: 190px;
     font-size: 16px;
 }
 
@@ -147,9 +147,9 @@ body{
 .fform-contact input[type="submit"]{
     padding: 10px 20px;
     margin-top: 16px; /* Add some spacing between the form and the submit button */
-    background-color: rgb(20, 42, 155);
+    background-color: rgb(13, 28, 103);
     color: white;
-    border: 1px solid rgb(20, 42, 155);
+    border: 1px solid rgb(13, 28, 103);
     border-radius: 4px;
     outline: none;
     height: 40px;
@@ -166,13 +166,13 @@ body{
 .fform-contact input[type="submit"].clicked {
     padding: 10px 20px;
     margin-top: 20px; /* Add some spacing between the form and the submit button */
-    background-color: rgb(20, 42, 155);
+    background-color: rgb(13, 28, 103);
     color: white;
-    border: 1px solid rgb(20, 42, 155);
+    border: 1px solid rgb(13, 28, 103);
     border-radius: 4px;
     outline: none;
     height: 40px;
-    width: 160px;
+    width: 190px;
     font-size: 16px;
 }
 
@@ -200,7 +200,7 @@ body{
 }
 
 .ttext {
-    color: rgb(18, 38, 140);
+    color: rgb(13, 28, 103);
     font-size: 21px;
 }
 
@@ -236,9 +236,9 @@ body{
 .contact input[type="submit"]{
     padding: 10px 20px;
     margin-top: 24px; /* Add some spacing between the form and the submit button */
-    background-color: rgb(20, 42, 155);
+    background-color: rgb(13, 28, 103);
     color: white;
-    border: 1px solid rgb(20, 42, 155);
+    border: 1px solid rgb(13, 28, 103);
     border-radius: 4px;
     outline: none;
     height: 40px;
@@ -255,13 +255,13 @@ body{
 .contact input[type="submit"].clicked {
     padding: 10px 20px;
     margin-top: 20px; /* Add some spacing between the form and the submit button */
-    background-color: rgb(20, 42, 155);
+    background-color: rgb(13, 28, 103);
     color: white;
-    border: 1px solid rgb(20, 42, 155);
+    border: 1px solid rgb(13, 28, 103);
     border-radius: 4px;
     outline: none;
     height: 40px;
-    width: 160px;
+    width: 190px;
     font-size: 16px;
 }
 
@@ -276,7 +276,7 @@ body{
 }
 
 .vtext {
-    color: rgb(18, 38, 140);
+    color: rgb(13, 28, 103);
     font-size: 22px;
 }
 
